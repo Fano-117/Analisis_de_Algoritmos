@@ -1,0 +1,11 @@
+def Met_burb(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if ar[j] > ar[j+1]:
+                ar[j], ar[j+1] = ar[j+1], ar[j]
+
+# Ejemplo:
+ar = [44, 40, 29, 12, 23, 11, 80]
+Met_burb(ar)
+print("Arreglo ordenado usando Metodo Burbuja:", ar)
